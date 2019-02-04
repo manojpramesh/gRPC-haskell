@@ -52,6 +52,18 @@ Finally, since `stack` does not use `nix` for any Haskell package dependencies,
 be sure to update repository references for dependent packages such as
 `protobuf-wire` in both `nix/<pkg>.nix` AND in `stack.yaml`.
 
+Installing GRPC C Core library (Unix)
+-----------------------------------------------------------
+
+```
+$ git clone https://github.com/grpc/grpc
+$ cd grpc
+$ git submodule update --init
+$ make
+$ sudo make install
+```
+
+
 <a name="stackgrpc"></a>Installing GRPC for `stack` (MacOS)
 -----------------------------------------------------------
 
